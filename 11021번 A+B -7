@@ -1,0 +1,11 @@
+const fs = require('fs');
+const input = fs.readFileSync('dev/stdin').toString().split('\n');
+const T = parseInt(input[0]);
+let answer = ''
+
+for ( i = 1 ; i<=T; i++){
+    let tem = input[i].split(' ');
+    answer += 'Case #'+i+': '+(parseInt(tem[0])+parseInt(tem[1]))+"\n";
+};
+
+console.log(answer)
